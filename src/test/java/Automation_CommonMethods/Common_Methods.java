@@ -1,7 +1,9 @@
 package Automation_CommonMethods;
 
 import java.util.Properties;
+import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +21,7 @@ public class Common_Methods {
 	public static WebDriverWait wait;
 	public static Properties prop;
 	public static ExtentReports extent;
+	public static Alert alert;
 
 	public static WebElement Xpath(By Xpath) {
 		return driver.findElement(Xpath);
@@ -29,6 +32,7 @@ public class Common_Methods {
 	}
 
 	public static String getText(By Xpath) {
+		
 		return driver.findElement(Xpath).getText();
 	}
 
@@ -67,5 +71,35 @@ public class Common_Methods {
 
 	public static void refresh() {
 		driver.navigate().refresh();
+	}
+	public static void switchToAlert() {
+		alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+        System.out.println("Alert Text: " + alertText);
+        Reporter.log(alertText);
+	}
+	public static void alertAccept() {
+		//alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	public static void alertDismiss() {
+		//alert = driver.switchTo().alert();
+		alert.dismiss();
+	}
+	public static void alertSendKeys(String string) {
+		//alert = driver.switchTo().alert();
+		alert.sendKeys(string);
+	}
+	public static Set<String> getWindowHandles() {
+		return driver.getWindowHandles();
+	}
+	public static void switchToIframeIndex(int index) {
+		driver.switchTo().frame(index);
+	}
+	public static void switchToIframeName(String name) {
+		driver.switchTo().frame(name);
+	}
+	public static void switchToIframeElement(WebElement element) {
+		driver.switchTo().frame(element);
 	}
 }

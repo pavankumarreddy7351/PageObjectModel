@@ -50,12 +50,14 @@ public class BaseClass extends Common_Methods{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
+			
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		action =new Actions(driver);
-		wait = new WebDriverWait(driver, 5);
+		
+		wait = new WebDriverWait(driver, 10);
 		driver.get(prop.getProperty("URL"));
 
 	}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 07 11:29:25 IST 2023</td>
+<td>Started on:</td><td>Tue Dec 12 12:06:01 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7058 ms)</td>
+<tr><td>Total time:</td><td>68 seconds (68615 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,175 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.webTablePage()'><b>webTablePage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Practice Automation&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BA-000311899&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd18a97e6a252ce36b2ac18440dab9fc
+*** Element info: {Using=link text, value=Practice Automation}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Automation_CommonMethods.Common_Methods.Xpath(Common_Methods.java:27)
+	at Automation_ObjectPages.WebTable_Page.naviagte_To_WebTable_Page(WebTable_Page.java:23)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.webTablePage(DemoWebSite_TestCases.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace129572255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace129572255'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Practice Automation&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BA-000311899&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd18a97e6a252ce36b2ac18440dab9fc
+*** Element info: {Using=link text, value=Practice Automation}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Automation_CommonMethods.Common_Methods.Xpath(Common_Methods.java:27)
+	at Automation_ObjectPages.WebTable_Page.naviagte_To_WebTable_Page(WebTable_Page.java:23)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.webTablePage(DemoWebSite_TestCases.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.alertPage()'><b>alertPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=120.0.6099.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BA-000311899&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd18a97e6a252ce36b2ac18440dab9fc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at Automation_CommonMethods.Common_Methods.clear(Common_Methods.java:44)
+	at Automation_ObjectPages.Alert_Pop_Up_Page.naviagte_To_Alert_Pop_Up_Page(Alert_Pop_Up_Page.java:26)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.alertPage(DemoWebSite_TestCases.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2009810220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2009810220'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=120.0.6099.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BA-000311899&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd18a97e6a252ce36b2ac18440dab9fc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at Automation_CommonMethods.Common_Methods.clear(Common_Methods.java:44)
+	at Automation_ObjectPages.Alert_Pop_Up_Page.naviagte_To_Alert_Pop_Up_Page(Alert_Pop_Up_Page.java:26)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.alertPage(DemoWebSite_TestCases.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,18 +247,101 @@ function toggleAllBoxes() {
 <tr>
 <td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.seleniumPage_Links()'><b>seleniumPage_Links</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
 <td></td>
-<td>2</td>
-<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@335b5620</td></tr>
+<td>3</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
 <tr>
 <td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.navigateToDemoPage()'><b>navigateToDemoPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
 <td></td>
+<td>2</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.multiWindowsPage()'><b>multiWindowsPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td></td>
+<td>8</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.successfullPage()'><b>successfullPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td></td>
+<td>0</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.iframePage()'><b>iframePage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases<br/>
+<a href="#Output-107041335" onClick='toggleBox("Output-107041335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107041335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107041335">
+First Name input is working fine<br/>
+last Name input is working fine<br/>
+gender is working fine<br/>
+address is working fine<br/>
+address2 is working fine<br/>
+city is working fine<br/>
+state is working fine<br/>
+pincode is working fine<br/>
+countryBox is working fine<br/>
+gmail is working fine<br/>
+Date is working fine<br/>
+Hours are working fine<br/>
+Minutes are working fine<br/>
+Phone Number field is working fine<br/>
+Courses1 is working fine<br/>
+Courses2 is working fine<br/>
+Query field is working fine<br/>
+code is working fine<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.mouseEventPage()'><b>mouseEventPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td></td>
+<td>3</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.dynamicPage()'><b>dynamicPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td></td>
 <td>1</td>
-<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@335b5620</td></tr>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
 <tr>
 <td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.homePage()'><b>homePage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
 <td></td>
-<td>0</td>
-<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@335b5620</td></tr>
+<td>1</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.progressBarPage()'><b>progressBarPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases</td>
+<td></td>
+<td>11</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
+<tr>
+<td title='Automation_PageObject_TestCases.DemoWebSite_TestCases.registerPage()'><b>registerPage</b><br>Test class: Automation_PageObject_TestCases.DemoWebSite_TestCases<br/>
+<a href="#Output-2130242983" onClick='toggleBox("Output-2130242983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2130242983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2130242983">
+First Name input is working fine<br/>
+last Name input is working fine<br/>
+gender is working fine<br/>
+address is working fine<br/>
+address2 is working fine<br/>
+city is working fine<br/>
+state is working fine<br/>
+pincode is working fine<br/>
+countryBox is working fine<br/>
+gmail is working fine<br/>
+Date is working fine<br/>
+Hours are working fine<br/>
+Minutes are working fine<br/>
+Phone Number field is working fine<br/>
+Courses1 is working fine<br/>
+Courses2 is working fine<br/>
+Query field is working fine<br/>
+code is working fine<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Automation_PageObject_TestCases.DemoWebSite_TestCases@bcef303</td></tr>
 </table><p>
 </body>
 </html>

@@ -9,7 +9,8 @@
       <class name="Automation_PageObject_TestCases.DemoWebSite_TestCases">
         <methods>
           <include name="closeApplication"/>
-          <include name="registerPage"/>
+          <include name="alertPage"/>
+          <include name="webTablePage"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- Automation_PageObject_TestCases.DemoWebSite_TestCases -->
