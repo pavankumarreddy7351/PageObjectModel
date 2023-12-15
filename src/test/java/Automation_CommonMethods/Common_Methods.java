@@ -20,8 +20,10 @@ public class Common_Methods {
 	public static ChromeOptions options;
 	public static WebDriverWait wait;
 	public static Properties prop;
+	public static Properties testData;
 	public static ExtentReports extent;
 	public static Alert alert;
+	
 
 	public static WebElement Xpath(By Xpath) {
 		return driver.findElement(Xpath);

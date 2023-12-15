@@ -4,10 +4,11 @@ import static org.junit.Assume.assumeFalse;
 
 import org.testng.annotations.Test;
 
-import Automation_ObjectManager.ObjectManager;
+import Automation.PageObjectModal.Utilites.DataDrivenTesting_AccessExcel;
+import Automation_ObjectManager.PageObjectManager;
 
-public class DemoWebSite_TestCases extends ObjectManager {
-	@Test(alwaysRun = false)
+public class DemoWebSite_TestCases extends PageObjectManager {
+	@Test(priority = 13)
 	public void homePage() {
 		home.homePage_Links();
 	}
@@ -22,9 +23,11 @@ public class DemoWebSite_TestCases extends ObjectManager {
 		demo.naviagte_To_DemoWebSite();
 	}
 
-	@Test(priority = 4)
-	public void registerPage() {
-		register.filling_RegiterForm();
+	@Test(dataProviderClass = DataDrivenTesting_AccessExcel.class, dataProvider = "testdata", priority = 4, enabled = true)
+	public void TestData(String firstName, String lastName, String address, String streetAddress,
+			String city, String state, String pincode, String Country, String gmail, String date, String hour,
+			String minute, String phone, String Query) {
+		register.filling_RegiterForm(firstName, lastName, address, streetAddress, city, state, pincode, Country, gmail, date, hour, minute, phone, Query);
 	}
 
 	@Test(priority = 5)

@@ -4,9 +4,12 @@
 	<listeners>
 		<listener class-name="Automation_PageObjectModal_Listeners.Listeners"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Automation_PageObject_TestCases.DemoWebSite_TestCases"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="Automation_PageObject_TestCases.DemoWebSite_TestCases" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

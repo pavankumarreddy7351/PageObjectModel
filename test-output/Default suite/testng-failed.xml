@@ -6,7 +6,7 @@
       <class name="Automation_PageObject_TestCases.DemoWebSite_TestCases">
         <methods>
           <include name="closeApplication"/>
-          <include name="progressBarPage"/>
+          <include name="TestData" invocation-numbers="0"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- Automation_PageObject_TestCases.DemoWebSite_TestCases -->

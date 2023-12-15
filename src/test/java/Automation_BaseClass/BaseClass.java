@@ -36,12 +36,17 @@ import io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper;
 public class BaseClass extends Common_Methods{
 	
 	@BeforeSuite
-	public void launchApplication() throws IOException {
+	public BaseClass launchApplication() throws IOException {
 		prop = new Properties();
 		File proFile = new File(
 				System.getProperty("user.dir") + "\\src\\test\\java\\Properties\\configuration.properties");
 		FileInputStream fis = new FileInputStream(proFile);
 		prop.load(fis);
+		testData = new Properties();
+		File testDataFile = new File(
+				System.getProperty("user.dir") + "\\src\\test\\java\\Automation_TestData\\TestData.properties");
+		FileInputStream testDataFileFIS = new FileInputStream(testDataFile);
+		testData.load(testDataFileFIS);
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -59,6 +64,7 @@ public class BaseClass extends Common_Methods{
 		
 		wait = new WebDriverWait(driver, 10);
 		driver.get(prop.getProperty("URL"));
+		return null;
 
 	}
 
