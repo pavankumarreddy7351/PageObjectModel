@@ -10,12 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import Automation_BaseClass.BaseClass;
 
 public class SeleniumTrainingPage extends BaseClass{
-	By seleniumTrain=By.linkText("Selenium Training");
+	By seleniumTrain=By.linkText("Selenium Online Training");
 	By tageName=By.tagName("a");
 	public void seleniumPageLinks() {
-		WebElement selenium=driver.findElement(seleniumTrain);
+		WebElement selenium=Xpath(seleniumTrain);
 		wait.until(ExpectedConditions.elementToBeClickable(selenium));
-		driver.findElement(By.linkText("Selenium Training")).click();
+		click(seleniumTrain);
 		List<WebElement> urls=driver.findElements(tageName);
 //		for(WebElement links:urls) {
 //			System.out.println(links.getText());

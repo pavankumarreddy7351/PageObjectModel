@@ -39,6 +39,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -48,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>14/12/2023 02:34:18</span>
+			<span class='label blue darken-3 suite-start-time'>19/12/2023 09:18:22</span>
 			</a>
 		</ul>
 	</div>
@@ -64,6 +65,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,12 +109,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>24</span> tests passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$95%'>
+                    <span class='strong'>23</span> tests passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> tests failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
+                    1</span> tests failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -136,103 +138,13 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>seleniumPage_Links</span>
-						<span class='test-time'>14/12/2023 02:34:18</span>
+						<span class='test-time'>19/12/2023 09:18:22</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:18</span>
-	<span class='label end-time'>14/12/2023 02:34:19</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.144</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:19 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:19 PM</td>
-				<td class='step-details'>
-						seleniumPage_Links onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\seleniumPage_Links.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\seleniumPage_Links.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>seleniumPage_Links</span>
-						<span class='test-time'>14/12/2023 02:34:22</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:22</span>
-	<span class='label end-time'>14/12/2023 02:34:23</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.139</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:23 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:23 PM</td>
-				<td class='step-details'>
-						seleniumPage_Links onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\seleniumPage_Links.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\seleniumPage_Links.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>navigateToDemoPage</span>
-						<span class='test-time'>14/12/2023 02:34:23</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:23</span>
-	<span class='label end-time'>14/12/2023 02:34:23</span>
+	<span class='label start-time'>19/12/2023 09:18:22</span>
+	<span class='label end-time'>19/12/2023 09:18:22</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.128</span>
 </div>
 <div class='test-steps'>
@@ -247,14 +159,158 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:23 PM</td>
+				<td class='timestamp'>9:18:22 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:23 PM</td>
+				<td class='timestamp'>9:18:22 AM</td>
+				<td class='step-details'>
+						seleniumPage_Links onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\seleniumPage_Links.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\seleniumPage_Links.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>seleniumPage_Links</span>
+						<span class='test-time'>19/12/2023 09:18:32</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:32</span>
+	<span class='label end-time'>19/12/2023 09:18:33</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.145</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:33 AM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Selenium Training"}
+  (Session info: chrome=120.0.6099.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BA-000311899', ip: '192.168.55.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36a44bea34c362ce6bf6dfa80e9109ad
+*** Element info: {Using=link text, value=Selenium Training}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Automation_ObjectPages.SeleniumTrainingPage.seleniumPageLinks(SeleniumTrainingPage.java:16)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.seleniumPage_Links(DemoWebSite_TestCases.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>9:18:33 AM</td>
+				<td class='step-details'>
+						seleniumPage_Links onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\seleniumPage_Links.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\seleniumPage_Links.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>navigateToDemoPage</span>
+						<span class='test-time'>19/12/2023 09:18:33</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:33</span>
+	<span class='label end-time'>19/12/2023 09:18:33</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.126</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:33 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:33 AM</td>
 				<td class='step-details'>
 						navigateToDemoPage onTestStart
 				</td>
@@ -264,20 +320,245 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\navigateToDemoPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\navigateToDemoPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\navigateToDemoPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\navigateToDemoPage.png'></li>
 							</ul>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>navigateToDemoPage</span>
-						<span class='test-time'>14/12/2023 02:34:25</span>
+						<span class='test-time'>19/12/2023 09:18:35</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:25</span>
-	<span class='label end-time'>14/12/2023 02:34:25</span>
+	<span class='label start-time'>19/12/2023 09:18:35</span>
+	<span class='label end-time'>19/12/2023 09:18:35</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.211</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:35 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:18:35 AM</td>
+				<td class='step-details'>
+						navigateToDemoPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\navigateToDemoPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\navigateToDemoPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TestData</span>
+						<span class='test-time'>19/12/2023 09:18:36</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:36</span>
+	<span class='label end-time'>19/12/2023 09:18:36</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.109</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:36 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:36 AM</td>
+				<td class='step-details'>
+						TestData onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\TestData.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\TestData.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TestData</span>
+						<span class='test-time'>19/12/2023 09:18:46</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:46</span>
+	<span class='label end-time'>19/12/2023 09:18:46</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.149</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:46 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:18:46 AM</td>
+				<td class='step-details'>
+						TestData onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\TestData.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\TestData.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>successfullPage</span>
+						<span class='test-time'>19/12/2023 09:18:46</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:46</span>
+	<span class='label end-time'>19/12/2023 09:18:47</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.140</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:47 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:47 AM</td>
+				<td class='step-details'>
+						successfullPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\successfullPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\successfullPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>successfullPage</span>
+						<span class='test-time'>19/12/2023 09:18:47</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:47</span>
+	<span class='label end-time'>19/12/2023 09:18:47</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.126</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:47 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:18:47 AM</td>
+				<td class='step-details'>
+						successfullPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\successfullPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\successfullPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>dynamicPage</span>
+						<span class='test-time'>19/12/2023 09:18:47</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:47</span>
+	<span class='label end-time'>19/12/2023 09:18:47</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.138</span>
 </div>
 <div class='test-steps'>
@@ -292,16 +573,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:25 PM</td>
+				<td class='timestamp'>9:18:47 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:25 PM</td>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:47 AM</td>
 				<td class='step-details'>
-						navigateToDemoPage onTestStart
+						dynamicPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -309,20 +590,110 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\navigateToDemoPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\navigateToDemoPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\dynamicPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\dynamicPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
-						<span class='test-name'>registerPage</span>
-						<span class='test-time'>14/12/2023 02:34:25</span>
+						<span class='test-name'>dynamicPage</span>
+						<span class='test-time'>19/12/2023 09:18:50</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:25</span>
-	<span class='label end-time'>14/12/2023 02:34:26</span>
+	<span class='label start-time'>19/12/2023 09:18:50</span>
+	<span class='label end-time'>19/12/2023 09:18:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.150</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:51 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:18:51 AM</td>
+				<td class='step-details'>
+						dynamicPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\dynamicPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\dynamicPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>mouseEventPage</span>
+						<span class='test-time'>19/12/2023 09:18:51</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:51</span>
+	<span class='label end-time'>19/12/2023 09:18:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.110</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:51 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:18:51 AM</td>
+				<td class='step-details'>
+						mouseEventPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\mouseEventPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\mouseEventPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>mouseEventPage</span>
+						<span class='test-time'>19/12/2023 09:18:53</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:18:53</span>
+	<span class='label end-time'>19/12/2023 09:18:53</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.133</span>
 </div>
 <div class='test-steps'>
@@ -337,61 +708,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:26 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:26 PM</td>
-				<td class='step-details'>
-						registerPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\registerPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\registerPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>registerPage</span>
-						<span class='test-time'>14/12/2023 02:34:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:33</span>
-	<span class='label end-time'>14/12/2023 02:34:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.123</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:33 PM</td>
+				<td class='timestamp'>9:18:53 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:33 PM</td>
+				<td class='timestamp'>9:18:53 AM</td>
 				<td class='step-details'>
-						registerPage onTestStart
+						mouseEventPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -399,20 +725,20 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\registerPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\registerPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\mouseEventPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\mouseEventPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
-						<span class='test-name'>successfullPage</span>
-						<span class='test-time'>14/12/2023 02:34:33</span>
+						<span class='test-name'>alertPage</span>
+						<span class='test-time'>19/12/2023 09:18:53</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:33</span>
-	<span class='label end-time'>14/12/2023 02:34:33</span>
+	<span class='label start-time'>19/12/2023 09:18:53</span>
+	<span class='label end-time'>19/12/2023 09:18:53</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.137</span>
 </div>
 <div class='test-steps'>
@@ -427,16 +753,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:33 PM</td>
+				<td class='timestamp'>9:18:53 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:33 PM</td>
+				<td class='timestamp'>9:18:53 AM</td>
 				<td class='step-details'>
-						successfullPage onTestStart
+						alertPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -444,21 +770,21 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\successfullPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\successfullPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\alertPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\alertPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
-						<span class='test-name'>successfullPage</span>
-						<span class='test-time'>14/12/2023 02:34:34</span>
+						<span class='test-name'>alertPage</span>
+						<span class='test-time'>19/12/2023 09:19:09</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:34</span>
-	<span class='label end-time'>14/12/2023 02:34:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.117</span>
+	<span class='label start-time'>19/12/2023 09:19:09</span>
+	<span class='label end-time'>19/12/2023 09:19:09</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.140</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -472,16 +798,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:34 PM</td>
+				<td class='timestamp'>9:19:09 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:34 PM</td>
+				<td class='timestamp'>9:19:09 AM</td>
 				<td class='step-details'>
-						successfullPage onTestStart
+						alertPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -489,21 +815,21 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\successfullPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\successfullPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\alertPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\alertPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
-						<span class='test-name'>dynamicPage</span>
-						<span class='test-time'>14/12/2023 02:34:34</span>
+						<span class='test-name'>multiWindowsPage</span>
+						<span class='test-time'>19/12/2023 09:19:09</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:34</span>
-	<span class='label end-time'>14/12/2023 02:34:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.109</span>
+	<span class='label start-time'>19/12/2023 09:19:09</span>
+	<span class='label end-time'>19/12/2023 09:19:10</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.118</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -517,16 +843,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:34 PM</td>
+				<td class='timestamp'>9:19:10 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:34 PM</td>
+				<td class='timestamp'>9:19:10 AM</td>
 				<td class='step-details'>
-						dynamicPage onTestStart
+						multiWindowsPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -534,21 +860,21 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\dynamicPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\dynamicPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\multiWindowsPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\multiWindowsPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
-						<span class='test-name'>dynamicPage</span>
-						<span class='test-time'>14/12/2023 02:34:35</span>
+						<span class='test-name'>multiWindowsPage</span>
+						<span class='test-time'>19/12/2023 09:19:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:35</span>
-	<span class='label end-time'>14/12/2023 02:34:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.139</span>
+	<span class='label start-time'>19/12/2023 09:19:16</span>
+	<span class='label end-time'>19/12/2023 09:19:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.150</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -562,16 +888,16 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:36 PM</td>
+				<td class='timestamp'>9:19:16 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:36 PM</td>
+				<td class='timestamp'>9:19:16 AM</td>
 				<td class='step-details'>
-						dynamicPage onTestStart
+						multiWindowsPage onTestStart
 				</td>
 			</tr>
 		</tbody>
@@ -579,20 +905,335 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\dynamicPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\dynamicPage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\multiWindowsPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\multiWindowsPage.png'></li>
 							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
-						<span class='test-name'>mouseEventPage</span>
-						<span class='test-time'>14/12/2023 02:34:36</span>
+						<span class='test-name'>webTablePage</span>
+						<span class='test-time'>19/12/2023 09:19:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:36</span>
-	<span class='label end-time'>14/12/2023 02:34:36</span>
+	<span class='label start-time'>19/12/2023 09:19:16</span>
+	<span class='label end-time'>19/12/2023 09:19:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.132</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:16 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:16 AM</td>
+				<td class='step-details'>
+						webTablePage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\webTablePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\webTablePage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>webTablePage</span>
+						<span class='test-time'>19/12/2023 09:19:22</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:22</span>
+	<span class='label end-time'>19/12/2023 09:19:22</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.141</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:22 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:19:22 AM</td>
+				<td class='step-details'>
+						webTablePage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\webTablePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\webTablePage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>progressBarPage</span>
+						<span class='test-time'>19/12/2023 09:19:22</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:22</span>
+	<span class='label end-time'>19/12/2023 09:19:23</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.116</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:23 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:23 AM</td>
+				<td class='step-details'>
+						progressBarPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\progressBarPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\progressBarPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>progressBarPage</span>
+						<span class='test-time'>19/12/2023 09:19:34</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:34</span>
+	<span class='label end-time'>19/12/2023 09:19:34</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.101</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:34 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:19:34 AM</td>
+				<td class='step-details'>
+						progressBarPage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\progressBarPage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\progressBarPage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>iframePage</span>
+						<span class='test-time'>19/12/2023 09:19:34</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:34</span>
+	<span class='label end-time'>19/12/2023 09:19:34</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.114</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:34 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:34 AM</td>
+				<td class='step-details'>
+						iframePage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\iframePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\iframePage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>iframePage</span>
+						<span class='test-time'>19/12/2023 09:19:51</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:51</span>
+	<span class='label end-time'>19/12/2023 09:19:52</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.124</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:52 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>9:19:52 AM</td>
+				<td class='step-details'>
+						iframePage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\iframePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\iframePage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>homePage</span>
+						<span class='test-time'>19/12/2023 09:19:52</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:52</span>
+	<span class='label end-time'>19/12/2023 09:19:52</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.128</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:52 AM</td>
+				<td class='step-details'>
+						
+				</td>
+			</tr>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>9:19:52 AM</td>
+				<td class='step-details'>
+						homePage onTestStart
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\homePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\homePage.png'></li>
+							</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>homePage</span>
+						<span class='test-time'>19/12/2023 09:19:53</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>19/12/2023 09:19:53</span>
+	<span class='label end-time'>19/12/2023 09:19:53</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.125</span>
 </div>
 <div class='test-steps'>
@@ -607,554 +1248,14 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:36 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:36 PM</td>
-				<td class='step-details'>
-						mouseEventPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\mouseEventPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\mouseEventPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>mouseEventPage</span>
-						<span class='test-time'>14/12/2023 02:34:38</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:38</span>
-	<span class='label end-time'>14/12/2023 02:34:38</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.118</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:38 PM</td>
+				<td class='timestamp'>9:19:53 AM</td>
 				<td class='step-details'>
 						
 				</td>
 			</tr>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:38 PM</td>
-				<td class='step-details'>
-						mouseEventPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\mouseEventPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\mouseEventPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>alertPage</span>
-						<span class='test-time'>14/12/2023 02:34:38</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:38</span>
-	<span class='label end-time'>14/12/2023 02:34:39</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.109</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:39 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:39 PM</td>
-				<td class='step-details'>
-						alertPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\alertPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\alertPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>alertPage</span>
-						<span class='test-time'>14/12/2023 02:34:55</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:55</span>
-	<span class='label end-time'>14/12/2023 02:34:55</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.151</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:55 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:34:55 PM</td>
-				<td class='step-details'>
-						alertPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\alertPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\alertPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>multiWindowsPage</span>
-						<span class='test-time'>14/12/2023 02:34:55</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:34:55</span>
-	<span class='label end-time'>14/12/2023 02:34:55</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.155</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:55 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:34:55 PM</td>
-				<td class='step-details'>
-						multiWindowsPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\multiWindowsPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\multiWindowsPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>multiWindowsPage</span>
-						<span class='test-time'>14/12/2023 02:35:02</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:02</span>
-	<span class='label end-time'>14/12/2023 02:35:02</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.121</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:02 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:35:02 PM</td>
-				<td class='step-details'>
-						multiWindowsPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\multiWindowsPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\multiWindowsPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>webTablePage</span>
-						<span class='test-time'>14/12/2023 02:35:02</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:02</span>
-	<span class='label end-time'>14/12/2023 02:35:02</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.147</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:02 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:02 PM</td>
-				<td class='step-details'>
-						webTablePage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\webTablePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\webTablePage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>webTablePage</span>
-						<span class='test-time'>14/12/2023 02:35:09</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:09</span>
-	<span class='label end-time'>14/12/2023 02:35:09</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.118</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:09 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:35:09 PM</td>
-				<td class='step-details'>
-						webTablePage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\webTablePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\webTablePage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>progressBarPage</span>
-						<span class='test-time'>14/12/2023 02:35:09</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:09</span>
-	<span class='label end-time'>14/12/2023 02:35:09</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.123</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:09 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:09 PM</td>
-				<td class='step-details'>
-						progressBarPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\progressBarPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\progressBarPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>progressBarPage</span>
-						<span class='test-time'>14/12/2023 02:35:21</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:21</span>
-	<span class='label end-time'>14/12/2023 02:35:21</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.112</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:21 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:35:21 PM</td>
-				<td class='step-details'>
-						progressBarPage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\progressBarPage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\progressBarPage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>iframePage</span>
-						<span class='test-time'>14/12/2023 02:35:21</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:21</span>
-	<span class='label end-time'>14/12/2023 02:35:21</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.106</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:21 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:21 PM</td>
-				<td class='step-details'>
-						iframePage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\iframePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\iframePage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
-					<div class='test-heading'>
-						<span class='test-name'>iframePage</span>
-						<span class='test-time'>14/12/2023 02:35:46</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:46</span>
-	<span class='label end-time'>14/12/2023 02:35:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.151</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:46 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:35:46 PM</td>
-				<td class='step-details'>
-						iframePage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\iframePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\iframePage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
-					<div class='test-heading'>
-						<span class='test-name'>homePage</span>
-						<span class='test-time'>14/12/2023 02:35:46</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:46</span>
-	<span class='label end-time'>14/12/2023 02:35:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.135</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:46 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:46 PM</td>
+				<td class='timestamp'>9:19:53 AM</td>
 				<td class='step-details'>
 						homePage onTestStart
 				</td>
@@ -1164,52 +1265,7 @@
 </div>
 
 							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\homePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\homePage.png'></li>
-							</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
-					<div class='test-heading'>
-						<span class='test-name'>homePage</span>
-						<span class='test-time'>14/12/2023 02:35:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>14/12/2023 02:35:47</span>
-	<span class='label end-time'>14/12/2023 02:35:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.102</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>			
-				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>2:35:47 PM</td>
-				<td class='step-details'>
-						
-				</td>
-			</tr>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>2:35:47 PM</td>
-				<td class='step-details'>
-						homePage onTestStart
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-							<ul class='screenshots'>
-								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\homePage.png' src='C:\Users\puchha.pavan\Automation\Page_Object_Modal\Screenshots\homePage.png'></li>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\homePage.png' src='C:\Users\puchha.pavan\git\PageObjectModel\Screenshots\homePage.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -1235,7 +1291,116 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>19/12/2023 09:18:32</td>
+										<td class='linked' test-id='2'>seleniumPage_Links</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Selenium Training"}
+  (Session info: chrome=120.0.6099.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BA-000311899', ip: '192.168.55.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\PUCHHA~1.PAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36a44bea34c362ce6bf6dfa80e9109ad
+*** Element info: {Using=link text, value=Selenium Training}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Automation_ObjectPages.SeleniumTrainingPage.seleniumPageLinks(SeleniumTrainingPage.java:16)
+	at Automation_PageObject_TestCases.DemoWebSite_TestCases.seleniumPage_Links(DemoWebSite_TestCases.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1255,19 +1420,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>14/12/2023 02:34:18</div>
+					<div class='panel-lead'>19/12/2023 09:18:22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>14/12/2023 02:35:47</div>
+			 		<div class='panel-lead'>19/12/2023 09:19:53</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 29.205</div>
+					<div class='panel-lead'>00 01 31.162</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1297,7 +1462,7 @@
 							</tr>
 							<tr>
 								<td>Java Version</td>
-								<td>11.0.20</td>
+								<td>17.0.8.1</td>
 							</tr>
 					</table>
 				</div>
@@ -1311,8 +1476,8 @@
 		<script>
 			var statusGroup = {
                 parentCount: 24,
-				passParent: 24,
-				failParent: 0,
+				passParent: 23,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
@@ -1338,7 +1503,7 @@
 		
 		<script>
 			var timeline = {
-			        "seleniumPage_Links":0.144,"seleniumPage_Links":0.139,"navigateToDemoPage":0.128,"navigateToDemoPage":0.138,"registerPage":0.133,"registerPage":0.123,"successfullPage":0.137,"successfullPage":0.117,"dynamicPage":0.109,"dynamicPage":0.139,"mouseEventPage":0.125,"mouseEventPage":0.118,"alertPage":0.109,"alertPage":0.151,"multiWindowsPage":0.155,"multiWindowsPage":0.121,"webTablePage":0.147,"webTablePage":0.118,"progressBarPage":0.123,"progressBarPage":0.112,"iframePage":0.106,"iframePage":0.151,"homePage":0.135,"homePage":0.102
+			        "seleniumPage_Links":0.128,"seleniumPage_Links":0.145,"navigateToDemoPage":0.126,"navigateToDemoPage":0.211,"TestData":0.109,"TestData":0.149,"successfullPage":0.14,"successfullPage":0.126,"dynamicPage":0.138,"dynamicPage":0.15,"mouseEventPage":0.11,"mouseEventPage":0.133,"alertPage":0.137,"alertPage":0.14,"multiWindowsPage":0.118,"multiWindowsPage":0.15,"webTablePage":0.132,"webTablePage":0.141,"progressBarPage":0.116,"progressBarPage":0.101,"iframePage":0.114,"iframePage":0.124,"homePage":0.128,"homePage":0.125
 			};
 		</script>
 		

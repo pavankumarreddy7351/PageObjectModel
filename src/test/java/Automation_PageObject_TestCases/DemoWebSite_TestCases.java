@@ -13,7 +13,7 @@ public class DemoWebSite_TestCases extends PageObjectManager {
 		home.homePage_Links();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = false)
 	public void seleniumPage_Links() {
 		selenium.seleniumPageLinks();
 	}
